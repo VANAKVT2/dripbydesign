@@ -1,0 +1,30 @@
+<h1>
+    DRIP <br>
+    BY <br>
+    DESIGN <br>
+    BCN <br>
+</h1>
+<div class="container_products" style="display: flex;">
+    @for (product of products; track product){
+    <div class="product_card">
+        <div style="display: flex; max-height: 350px; text-align: center;">
+            <img class="img_product" [src]="product.image" alt="{{ product.name }}">
+            <div class="sizes">
+                <div class="circlesize">
+                    <p class="text_size">S</p>
+                </div>
+                <br>
+                <div class="circlesize">
+                    <p class="text_size">M</p>
+                </div>
+                <br>
+                <div class="circlesize">
+                    <p class="text_size">L</p>
+                </div>
+            </div>
+        </div>
+        <h1 class="card_product_name">{{ product.name }}</h1>
+        <h1 class="card_product_price">{{ product.price }} $</h1>
+    </div>
+    }
+</div>

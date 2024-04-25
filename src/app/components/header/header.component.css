@@ -1,0 +1,40 @@
+.header {
+    margin-top: 20px;
+}
+
+.header_bar {
+    height: 60px;
+    width: 0px;
+    transform-origin: 0 0;
+    border: 3px solid black;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.header>div {
+    background-color: #f8f9fa;
+    margin-left: 150px;
+    border-radius: 20px;
+}
+
+.header_section {
+    font-family: 'pacifico';
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.header_section:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}

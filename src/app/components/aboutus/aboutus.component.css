@@ -1,0 +1,21 @@
+.aboutuspage_title {
+    font-family: "edition";
+    margin-left:68%;
+    margin-top:-150px;
+    position: absolute;
+
+}
+
+
+.aboutuspage_title>h1 {
+    font-family: "edition";
+    text-align: center;
+    font-size: 130px;
+    font-weight: 1;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}

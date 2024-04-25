@@ -1,0 +1,134 @@
+h1 {
+    font-family: 'edition';
+    font-size: 170px;
+    font-weight: 1;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.indicator {
+    font-family: "pacifico";
+    position: absolute;
+    top: -50px;
+    font-size: 100px;
+    right: 250px;
+    color: white;
+}
+
+.add_item_form {
+    position: absolute;
+    top: 250px;
+    text-align: center;
+    left: 350px;
+}
+
+
+
+form {
+    text-align: right;
+    margin-left: 130px;
+}
+
+
+form label {
+    text-align: right;
+    font-family: 'pacifico';
+    color: white;
+    font-size: 30px;
+    margin: 5px;
+}
+
+form input {
+    margin: 0 auto;
+    /* Center inputs */
+}
+
+form button {
+    width: 100%;
+    background: none;
+    border: none;
+    font-family: 'pacifico';
+    font-size: 45px;
+    color: white;
+}
+
+form button p {
+    text-decoration: underline;
+}
+
+form button p:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.form-alert {
+    color: rgb(181, 12, 12);
+    font-family: 'pacifico';
+    font-size: 15px;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 1;
+    margin-top: -20px;
+}
+
+.product_card {
+    position: absolute;
+    top: 250px;
+    text-align: center;
+    left: 950px;
+    width: 400px;
+    height: 500px;
+}
+
+.img_preview {
+    max-width: 350px;
+    max-height: 350px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.card_product_name {
+    font-family: 'pacifico';
+    font-size: 40px;
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 0px;
+}
+
+
+.card_product_price {
+    font-family: 'pacifico';
+    font-size: 35px;
+    margin-top: -40px;
+    width: 100%;
+    margin-left: 0px;
+}
+
+.sizes {
+    position: absolute;
+    top: 250px;
+    text-align: center;
+    left: 1300px;
+    width: 400px;
+    height: 500px;
+}
+
+.circlesize {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    vertical-align: baseline;
+}
+
+.text_size{
+    font-family: 'edition';
+    font-size: 50px;
+    color: black;
+    margin-top: 3px;
+}

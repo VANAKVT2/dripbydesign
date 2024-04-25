@@ -1,0 +1,21 @@
+.homepage_title {
+    font-family: "edition";
+    margin-left: 10%;
+    margin-top: 0.1%;
+    position: absolute;
+
+}
+
+
+.homepage_title>h1 {
+    font-family: "edition";
+    text-align: center;
+    font-size: 175px;
+    font-weight: 1;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,74 @@
+h1 {
+    font-family: 'edition';
+    font-size: 170px;
+    font-weight: 1;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.container_products {
+    position: absolute;
+    top: 150px;
+    text-align: center;
+    left: 550px;
+    border-radius: 20px;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+.product_card {
+    width: 400px;
+}
+
+.card_product_name {
+    font-family: 'pacifico';
+    font-size: 40px;
+    width: 100%;
+    margin-left: 0px;
+}
+
+
+.card_product_price {
+    font-family: 'pacifico';
+    font-size: 35px;
+    margin-top: -40px;
+    width: 100%;
+    margin-left: 0px;
+}
+
+.sizes {
+    top: 250px;
+    text-align: center;
+    left: 1300px;
+    width: 400px;
+    height: 500px;
+}
+
+.circlesize {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    vertical-align: baseline;
+    margin:10px;
+}
+
+.text_size {
+    font-family: 'edition';
+    font-size: 50px;
+    color: black;
+    margin-top: 3px;
+}
+
+.img_product {
+    max-width: 350px;
+    max-height: 350px;
+    background-color: white;
+    border-radius: 20px;
+}

@@ -1,0 +1,102 @@
+<h1 style="width: 150px;">
+    DRIP <br>
+    BY <br>
+    DESIGN <br>
+    BCN <br>
+</h1>
+
+<h1 id="indicator" class="indicator">
+    New Item
+</h1>
+
+<div class="add_item_form">
+    <form action="" [formGroup]="addItemForm" (submit)="onSubmit()" enctype="multipart/form-data">
+
+        <div>
+            <div *ngIf="(
+                    addItemForm.get('id')?.dirty ||
+                    addItemForm.get('id')?.touched
+                   ) &&
+                   addItemForm.get('id')?.invalid" class="form-alert">
+                Please, provide an id for the product
+            </div>
+            <label for="name">ID:</label>
+            <input type="text" id="id" name="id" required formControlName="id">
+        </div>
+
+        <br>
+
+        <div>
+            <div *ngIf="(
+                    addItemForm.get('name')?.dirty ||
+                    addItemForm.get('name')?.touched
+                   ) &&
+                   addItemForm.get('name')?.invalid" class="form-alert">
+                Please, provide a name for the product
+            </div>
+            <label for="id">Name:</label>
+            <input type="text" id="name" name="name" required formControlName="name">
+        </div>
+
+        <br>
+
+        <div>
+            <div *ngIf="(
+                    addItemForm.get('price')?.dirty ||
+                    addItemForm.get('price')?.touched
+                   ) &&
+                   addItemForm.get('price')?.invalid" class="form-alert">
+                Please, input a valid price.
+            </div>
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" required formControlName="price" placeholder=0>
+        </div>
+
+        <br>
+
+        <div>
+            <div *ngIf="(
+                addItemForm.get('image')?.dirty ||
+                addItemForm.get('image')?.touched
+                   ) &&
+                   addItemForm.get('image')?.invalid" class="form-alert">
+                Invalid image. Please provide a valid image.
+            </div>
+            <label for="image" style="margin-right:35%">Image</label>
+            <br>
+            <input type="file" id="form_image" name="image" accept=".png" required formControlName="image"
+                (change)="onFileSelected($event)">
+        </div>
+
+        <br>
+        <div>
+            <button type=" submit" [disabled]="addItemForm.invalid">
+                <p>Add Item</p>
+            </button>
+        </div>
+    </form>
+</div>
+
+<div id="preview_image" class="product_card" *ngIf="previewImage">
+    <img class="img_preview" id="preview" [src]="previewImage" />
+    <h1 class="card_product_name" *ngIf="(addItemForm.get('name')?.dirty) ">
+        {{addItemForm.get("name")?.value}}
+    </h1>
+    <h1 class="card_product_price" *ngIf="(addItemForm.get('price')?.dirty) ">
+        {{addItemForm.get("price")?.value}} $
+    </h1>
+</div>
+
+<div class="sizes" *ngIf="previewImage">
+    <div class="circlesize">
+        <p class="text_size">S</p>
+    </div>
+    <br>
+    <div class="circlesize">
+        <p class="text_size">M</p>
+    </div>
+    <br>
+    <div class="circlesize">
+        <p class="text_size">L</p>
+    </div>
+</div>

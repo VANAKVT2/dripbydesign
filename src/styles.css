@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+/* FONTS TO BE INCLUDED IN THIS PROJECT */
+
+@font-face {
+    font-family: 'edition';
+    src: url("./assets/fonts/edition.TTF") format('truetype');
+}
+
+@font-face {
+    font-family: 'pacifico';
+    src: url("./assets/fonts/pacifico.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'edition';
+    src: url("./assets/fonts/edition.TTF") format('truetype');
+}
+
+@font-face {
+    font-family: 'edition';
+    src: url("./assets/fonts/edition.TTF") format('truetype');
+}
