@@ -1,7 +1,7 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ProductService, Product } from '../../product.service';
-import { CommonModule } from '@angular/common';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { ApiService } from '../../api.service';
+import { Product, ProductService } from '../../product.service';
 
 @Component({
   selector: 'app-shopping',
@@ -13,13 +13,17 @@ export class ShoppingComponent implements OnInit, OnDestroy {
   products: Product[] = [];
   private productSubscription: Subscription = new Subscription;
 
-  constructor(private productService: ProductService) { }
+
+  constructor(private productService: ProductService, private ApiService: ApiService) { }
 
   ngOnInit(): void {
-    this.productSubscription = this.productService.getProducts().subscribe((products) => {
+    this.ApiService.getItems().subscribe((products) => {
       this.products = products;
-      console.log(this.products);
     });
+    /*     this.productSubscription = this.productService.getProducts().subscribe((products) => {
+           this.products = products;
+           console.log(this.products);
+         }); */
   }
 
   ngOnDestroy(): void {
